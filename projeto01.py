@@ -1,7 +1,6 @@
 
 import tkinter as tk
 
-
 janela = tk.Tk()
 janela.title("Calculadora")
 
@@ -68,5 +67,3 @@ botao_igual.grid(row=1, column=0)
 
 
 janela.mainloop()
-
-
