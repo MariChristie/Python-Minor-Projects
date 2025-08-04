@@ -21,6 +21,7 @@ notebook = ttk.Notebook(root)
 notebook.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
 
 def add_note():
+
     note_frame = ttk.Frame(notebook, padding=10)
     notebook.add(note_frame, text="New Note")
 
@@ -69,6 +70,7 @@ def load_notes():
         pass
 
 load_notes()
+
 
 def delete_note():
 
