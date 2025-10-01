@@ -44,7 +44,7 @@ def add_note():
 
         notes[title] = content.strip()
 
-        with open("notes.json", "w") as f:
+        with open("Note/notes.json", "w") as f:
             json.dump(notes, f)
 
         note_content = tk.Text(notebook, width=40, height=10)
@@ -58,7 +58,7 @@ def add_note():
 
 def load_notes():
     try:
-        with open("notes.json", "r") as f:
+        with open("Note/notes.json", "r") as f:
             notes = json.load(f)
 
         for title, content in notes.items():
@@ -84,7 +84,7 @@ def delete_note():
     if confirm:
         notebook.forget(current_tab)
         notes.pop(note_title)
-        with open("notes.json", "w") as f:
+        with open("Note/notes.json", "w") as f:
             json.dump(notes, f)
 
 new_button = ttk.Button(root, text="New Note",
