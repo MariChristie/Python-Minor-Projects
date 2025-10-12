@@ -1,0 +1,2 @@
+lista_produtos = ["airpod", "ipad", "iphone", "macbook"]
+precos = [2000, 9000, 6000, 11000]
