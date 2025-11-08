@@ -17,7 +17,5 @@ if len(pedir) == 11:
         else:
             digito_calculado = resto
         digito_original = int(pedir[9])
-
-            
 else: print("CPF inválido")
 
