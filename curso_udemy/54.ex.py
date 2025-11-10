@@ -23,7 +23,9 @@ Bom dia 0-11, Boa tarde 12-17, Boa noite 18-23.
 
 pedir_hora = input("Digite a hora atual (0-23): ")
 
-if pedir_hora.isdigit():
+try:
+    pedir_hora.isdigit()
+    
     hora = int(pedir_hora)
     if hora in range(0, 12):
         print("Bom dia!")
@@ -31,7 +33,7 @@ if pedir_hora.isdigit():
         print("Boa tarde!")
     elif hora in range(18, 23):
         print("Boa noite!")
-else:
+except:
     print("Por favor, digite um número válido entre 0 e 23.")
 
 """
